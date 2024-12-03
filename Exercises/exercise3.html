@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       :root{
+            --home:red;
+            --about: yellow; 
+            --contact:blue;
+            --more:green;
+            --default:lightgrey;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: var(--default);
+        }
+        .nav{
+            font-size: 33px;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+        }
+        li{
+            padding: 20px;
+            width: 350px;
+            border: 2px solid black;
+            color:white;
+            font-weight: bold;
+            
+        }
+        ul li:first-child{
+            background-color: var(--home);
+        }
+        ul li:nth-child(2){
+            background-color: var(--about);
+        }
+        ul li:nth-child(3){
+            background-color: var(--contact);
+        }
+        ul li:last-child{
+            background-color: var(--more);
+        }
+    </style>
+</head>
+<body>
+    <!-- Question -->
+    <!-- Create a multicolor NavBar website which can change color using CSS Variables -->
+<nav class = "nav">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact us</li>
+        <li>More</li>
+    </ul>
+</nav>
+</body>
+</html>

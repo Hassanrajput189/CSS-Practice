@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Question -->
+    <!-- Create a website that contains a navbar , two containers along with each other an two more containers , one would be below to two containers with some border radius and the last container will be the footer , lastly the nav bar will have a stickey poistion and their should be another container with a fixed position with should look like a logo on the top right of the website. -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    </style>
+    <style>
+    
+        /* :root{
+            --primary-color: #ad5afacc;
+            --text-color: white;
+            --secondary-color: #e3cff5cc;
+        } */
+    
+        :root{
+            --primary-color: #061872cc;
+            --text-color: white;
+            --secondary-color: #6ea5fccc;
+        }
+        
+        body{
+            background-color: var(--secondary-color);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+    
+        nav {
+            position:sticky;
+            background-color: var(--primary-color);
+            padding: 12px 0;
+        }
+    
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 23px;
+            font-weight: bolder;
+            
+        }
+    
+        ul li a{
+            color: var(--text-color);
+            text-decoration: none;
+        }
+        .boxes{
+            display:flex;
+            justify-content: center;
+            padding:33px;
+        }
+        .box{
+            margin:auto;
+            border:2px solid black;
+            height: 222px;
+            width: 320px;
+            background-color: red;
+        }
+        .container{
+            margin:auto;
+            text-align: center;
+            border-radius: 40px;
+            background-color: yellow;
+            height:200px;
+            width:400px;
+        }
+        .footer{
+            margin: auto;
+            background-color:aqua;
+            height: 100px;
+            width:600px;
+            text-align: center;
+        }
+        .watermark{
+            position: fixed;
+            height:50px;
+            width :50px;
+            position:fixed;
+            background-color : black;
+            border-radius: 30px;
+            right:0;
+        }
+            </style>
+</head>
+
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="boxes">
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+<div class="container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam fugiat quos laborum facilis, amet repellat. Eveniet eos at explicabo nesciunt. Libero facere temporibus eos ad illo porro illum animi quos.</div>
+<div class="footer">this is footer</div>
+<div class="watermark"></div>
+</body>
+</html>

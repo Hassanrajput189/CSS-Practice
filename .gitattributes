@@ -1,0 +1,2 @@
+*.exe filter=lfs diff=lfs merge=lfs -text
+Exercises/References/exercise6_resource.exe filter=lfs diff=lfs merge=lfs -text
